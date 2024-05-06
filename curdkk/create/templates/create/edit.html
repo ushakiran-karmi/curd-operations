@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <center>
+            <form method="POST" action="/updateprofile/{{user.uid}}">
+                {% csrf_token %}
+                <div class="container">
+            <br>
+                <div class="form-group row">
+                <label class="col-sm-1 col-form-label"></label>
+                <div class="col-sm-4">
+                <h3>Update Details</h3>  
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User Id:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="uid" id="uid" required maxlength="20" value="{{user.uid}}"/>
+
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="uname" id="uname" required maxlength="100" value="{{user.uname}}"/>
+
+                 
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User Email:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="uemail" id="uemail" required maxlength="254" value="{{user.uemail}}"/>
+
+                 
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User Contact:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="ucontact" id="ucontact" required maxlength="15" value="{{user.ucontact}}"/>
+
+                 
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User Name:</label>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-success">Update</button>
+
+                 
+                </div>
+            </div>
+                
+                         
+                
+                
+                    
+                
+                     
+
+
+
+            </form>
+        </center>
+       
+    </body>
+        
+</html>
